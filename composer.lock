@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f1de209378e6602e3d56189143351ae1",
+    "content-hash": "5c9635ff356b7c9297536da4592a4a82",
     "packages": [
         {
             "name": "romulodl/ema",
-            "version": "v1.3.0",
+            "version": "v2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/romulodl/ema.git",
-                "reference": "1636dd151184c663407b2ae9c3c57aadbcdb9399"
+                "reference": "97bd9efdf32d866b23d78e2596b2a4b1aabc7af9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/romulodl/ema/zipball/1636dd151184c663407b2ae9c3c57aadbcdb9399",
-                "reference": "1636dd151184c663407b2ae9c3c57aadbcdb9399",
+                "url": "https://api.github.com/repos/romulodl/ema/zipball/97bd9efdf32d866b23d78e2596b2a4b1aabc7af9",
+                "reference": "97bd9efdf32d866b23d78e2596b2a4b1aabc7af9",
                 "shasum": ""
             },
             "require-dev": {
@@ -40,7 +40,7 @@
                 }
             ],
             "description": "EMA without the PECL trader extension",
-            "time": "2020-05-19T23:23:45+00:00"
+            "time": "2020-05-28T23:20:25+00:00"
         }
     ],
     "packages-dev": [
@@ -715,16 +715,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "8.5.4",
+            "version": "8.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "8474e22d7d642f665084ba5ec780626cbd1efd23"
+                "reference": "63dda3b212a0025d380a745f91bdb4d8c985adb7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/8474e22d7d642f665084ba5ec780626cbd1efd23",
-                "reference": "8474e22d7d642f665084ba5ec780626cbd1efd23",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/63dda3b212a0025d380a745f91bdb4d8c985adb7",
+                "reference": "63dda3b212a0025d380a745f91bdb4d8c985adb7",
                 "shasum": ""
             },
             "require": {
@@ -794,7 +794,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2020-04-23T04:39:42+00:00"
+            "time": "2020-05-22T13:51:52+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",

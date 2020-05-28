@@ -16,25 +16,15 @@ or add `romulodl/macd` to your `composer.json`. Please check the latest version 
 
 ```php
 $macd = new Romulodl\Macd();
-$macd->calculate(array $values, array $previous_values = [], int $short_period = 12, int $long_period = 26);
+$macd->calculate(array $values, int $short_period = 12, int $long_period = 26);
 //returns a float value
 ```
 
 For example:
 ```php
 $macd = new Romulodl\Macd();
-$macd->calculate([10, 12, 14, 20, 14, 10, 11]);
+$macd->calculate([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]);
 ```
-
-#### What is `$previous_values` for?
-
-The EMA calculation (used by the MACD) is based on the previous round of calculation. So the n round depends on n - 1 results.
-Then what is n - 1 for the first calculation? If `$previous_values` is not available, it uses a simple moving average
-for it. With `$previous_values` set, it will start the calculation of the EMA before and the result will be more
-accurate (at least closest to what Trading view shows.)
-
-It is recommended that you use the same ammount of `$values` and `$previous_values` for more accurate results. FOr example, send the previous 26 values when calculating a default MACD(12, 26). 
-
 
 ## Why did you do this?
 
