@@ -16,8 +16,20 @@ or add `romulodl/macd` to your `composer.json`. Please check the latest version 
 
 ```php
 $macd = new Romulodl\Macd();
-$macd->calculate(array $values, int $short_period = 12, int $long_period = 26);
-//returns a float value
+$macd->calculate(array $values, int $short_period = 12, int $long_period = 26, int $signal_period = 9);
+//returns an array values with the macd and signals
+//for example
+//
+[
+  [
+    100, // macd value
+    90 // signal value
+  ],
+  [
+    99, //macd value from the previous candle
+    89 // signal value from the previous candle
+  ]
+]
 ```
 
 For example:

@@ -34,19 +34,6 @@ final class MacdTest extends TestCase
 		$macd->calculate($values);
 	}
 
-	public function testCalculateMacdWithDefaultValues(): void
-	{
-		$val = require(__DIR__ . '/values.php');
-		$values = [];
-		foreach ($val as $v) {
-			$values[] = $v[2];
-		}
-		$values = array_slice($values, -26);
-
-		$macd = new Macd();
-		$this->assertSame(-83.84, round($macd->calculate($values), 2));
-	}
-
 	public function testCalculateMacdWithAllValues(): void
 	{
 		$val = require(__DIR__ . '/values.php');
@@ -56,6 +43,7 @@ final class MacdTest extends TestCase
 		}
 
 		$macd = new Macd();
-		$this->assertSame(152.24, round($macd->calculate($values), 2));
+		$this->assertSame(152.24, round($macd->calculate($values)[0][0], 2));
+		$this->assertSame(275.11, round($macd->calculate($values)[0][1], 2));
 	}
 }
