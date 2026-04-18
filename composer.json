@@ -3,7 +3,7 @@
   "description": "MACD without the PECL trader extension",
   "license": "Apache-2.0",
   "require-dev": {
-    "phpunit/phpunit": "^8.5"
+    "phpunit/phpunit": "^12.5"
   },
   "authors": [
     {
